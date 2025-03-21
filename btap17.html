@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background: yellow;
+            height: 100px;
+            width: 100%;
+        }
+        .menu {
+            background: black;
+            color: white;
+            padding: 10px;
+            overflow: hidden;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+        }
+        .container {
+            width: 100%;
+            overflow: hidden;
+        }
+        .left {
+            width: 70%;
+            float: left;
+            padding: 20px;
+            background: white;
+        }
+        .left h2 {
+            color: red;
+        }
+        .right {
+            width: 30%;
+            float: left;
+            background: green;
+            padding: 10px;
+        }
+        .right .right-top {
+            width: 100%;
+            background: hsl(120, 100%, 25%);
+            color: white;
+            padding: 20px;
+            margin-bottom: 5px;
+            border: 1px solid #f9f9f9;
+            border-radius: 5px;
+        }
+        .right .right-bottom {
+            display: flex;
+            gap: 5px;
+        }
+        .right .right-bottom div {
+            background: rgb(0, 127, 0);
+            color: white;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Feedback</a>
+        <a href="#">FAQs</a>
+        <a href="#">My Account</a>
+        <a href="#" style="float:right;">English</a>
+        <a href="#" style="float:right;">Tiếng Việt</a>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <h2>TRANG CHỦ</h2>
+            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/7264/333112/citizen-bi5120-51z-nam-thumb-638702013388393690-600x600.jpg" alt="Đồng hồ" width="300">
+        </div>
+        <div class="right">
+            <div class="right-top">RIGHT-TOP</div>
+            <div class="right-bottom">
+                <div>RIGHT-LEFT</div>
+                <div>RIGHT-RIGHT</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
